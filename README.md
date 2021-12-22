@@ -1,18 +1,11 @@
-# Luque Lab project template
+# Predicting the capsid architecture of phages from metagenomic data
 
 ## WHAT
-This repository provides the default structure for projects in the Luque Lab.
+This repository contains the codes and instructions to replicate the research published in Lee, Diana Y., Bartels, Caitlin, McNair, Katelyn, Edwards, Robert A., Swairjo, Manal A., and Luque, Antoni, "Predicting the capsid architecture of phages from metagenomic data", journal/doi TBD
 
-## WHO
-The template was originally concived by Antoni Luque based on recommendations from Noble PLoS Comp Biol 2009, Wilson et al PLoS Comp Biol 2017, and Briney "Data Management for Researchers" (2015), Hunt and Thomas "The Pragmatic Programmer: Your Journey to Mastery" (2019 2nd ed).
+The link to this repository was included in the Methods and Materials of the published article.
 
-## WHEN
-This is an evolving repository
-Started: 2021-05-10
-
-End: ...
-
-## FILES & FOLDERS
+## FOLDER DESCRIPTIONS
 FOLDER: /bin
 --> This folder contains basic scripts and executable files.
 
