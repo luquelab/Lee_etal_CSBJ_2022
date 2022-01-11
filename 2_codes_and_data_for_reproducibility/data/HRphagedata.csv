@@ -1,0 +1,38 @@
+﻿Capsid,T,lattice,h,k,Max Diameter (nm),Family,Reference,NCBI,DNA (bp),DNA (kbp),PDB/ EMDB,packing type,Packed DNA
+C1,4,hex,2,0,50,P,Aksyuk et al. (2012),NP_852022,16687,16.687,EMDB 5446,,
+HSTV-1,7,hex,2,1,62,P,Pietila et al. (2013),AGC34559,32189,32.189,EMDB 2279,headfull,35440
+P2,7,hex,2,1,60,M,Dearborn et al. (2012),CAPSD_BPP2,33590,33.59,EMDB 2462,,
+TP901-1,7,hex,2,1,66,S,Bebeacua et al. (2013),NP_112699,37667,37.667,EMDB 2133,headfull (pac),38400
+Sf6,7,hex,2,1,60,P,Parent et al. (2012b),NP_958181,39044,39.044,PDB 5L35,,
+ε15,7,hex,2,1,70,P,"Baker et al. (2013), Jiang et al. (2008)",NP_848215,39671,39.671,PDB 3J40,,
+HK97,7,hex,2,1,66,S,"Gertsman et al. (2009), Helgstrand et al. (2003), Wikoff et al. (2000)",CAPSD_BPHK7,39732,39.732,PDB 2FS3,,
+T7,7,hex,2,1,60,P,"Agirrezabala et al. (2007), Guo et al. (2014), Ionelet al. (2011)",CAPSA_BPT7,39937,39.937,PDB 1OHG,,
+CUS-3,7,hex,2,1,69,P,Parent et al. (2014),ABQ88398,40207,40.207,EMDB 5947,,
+HK022,7,hex,2,1,63,S,Pride et al (2006),PRJNA14048,40751,40.751,,,
+Pf-WMP4,7,hex,2,1,55,P,Liu et al (2007),PRJNA17743,40938,40.938,,,
+BPP-1,7,hex,2,1,67,P,Zhang et al. (2013),AAR97683,42943,42.943,PDB 3J4U,,
+P22,7,hex,2,1,71,P,"Chen et al. (2011), Parent et al. (2010a)",CAPSD_BPP22,43500,43.5,PDB 2XYZ,COS,45100
+80α,7,hex,2,1,63,S,Spilman et al. (2011),YP_001285361,43859,43.859,PDB 6B0X,,
+K1E/K1-5,7,hex,2,1,63,P,Leiman et al. (2007),Q2WC43_9VIRU,44700,44.7,PDB 2XYZ,,
+P-SSP7,7,hex,2,1,65,P,Liu et al. (2010),YP_214206,44970,44.97,PDB 2XD8,,
+Gifsy-2,7,hex,2,1,63,S/M,Effantin et al. (2010),NCBI (N),45840,45.84,EMDB 1694,,
+Syn5,7,hex,2,1,60,P,"Gipson et al. (2014), and Pope et al. (2007)",YP_001285448,46214,46.214,PDB 4BML,,
+λ,7,hex,2,1,60,S,Lander et al. (2008),CAPSD_LAMBD,48490,48.49,EMDB 1507,COS,48502
+CW02,7,hex,2,1,70,P,Shen et al. (2012),YP_007010559,49390,49.39,PDB 3J1A,,
+SPP1,7,hex,2,1,61,S,White et al. (2012),Q38582_BPSPP,49500,49.5,PDB 6R3A,,
+SIO-2,12,hex,2,2,80,S,Lander et al. (2012),YP_004957576,80000,80,EMDB 5383,,
+P74-26,9.33,tri-hex,2,1,,S,Stone et al. 2019,,83000,83,PDB 6O3H,,
+P23-45,9.33,tri-hex,2,1,,S,Bayfield et al. 2019,,84200,84.2,PDB 6IBC,,
+Basilisk,12,tri-hex,3,0,72,S,"Grose et al. (2014), Twarock and Luque (2019)",,81790,81.79,EMDB 6043,,
+Mic1,13,hex,3,1,,S,Jin et al. 2019,,92627,92.627,PDB 6J3Q,,
+T5,13,hex,3,1,90,S,Effantin et al. (2006); Casjens/Gilcrease (2009) for overpack,CAPSD_BPT5,121750,121.75,PDB 6OMC,,131889
+SPO1,16,hex,4,0,108,M,Duda et al. (2006),ACI90978,132560,132.56,Duda et al. (2006),,146000
+ΦM12,19,hex,3,2,100,M,Stroupe et al. (2014),AGR476973,194701,194.701,EMDB 5717,,
+N3,19,hex,3,2,119,C,"Suhanovsky and Teschke (2015), Hua et al. (2017)",,207000,207,EMDB 8487,,213000
+PAU,25,hex,5,0,130,M,"Suhanovsky and Teschke (2015), Hua et al. (2017)",,219000,219,EMDB 8488,,296000
+ΦRSL1,27,hex,3,3,123,M,Effantin et al. (2013),YP_001950011,240000,240,EMDB 2243,,
+PBS1,27,hex,3,3,140,M,"Suhanovsky and Teschke (2015), Hua et al. (2017)",,252000,252,EMDB 8486,,320000
+ΦKZ,27,hex,3,3,145,M,Fokine et al. (2005),AF399011_120,280000,280,Fokine et al. (2005),,
+121Q,28,hex,4,2,140,M,Suhanovsky and Teschke (2015),YP_009102190,348532,348.532,EMDB 8485,,378000
+SCTP2,39,hex,5,2,163,M,Hua Thesis 2015,,440000,440,,,495000
+G,52,hex,6,2,185,M,"Suhanovsky and Teschke (2015), Hua et al. (2017)",,498000,498,EMDB 8484,,626000
