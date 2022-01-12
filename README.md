@@ -18,4 +18,4 @@
 --> includes both G2T and MCP2T python executable files to run the tools on your data
 
 **FOLDER:** 4_github_docs
---> WIP: files for github pages
+--> (in progress)files for github pages
