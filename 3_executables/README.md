@@ -10,14 +10,14 @@
 
 **FILE:** G2T.py\
 --> This the current (as of 2021-11-10) G2T model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the genome\
---> Requires:\ 
+--> Requires: \ 
     phageFunctions.py  :  Functions for calculating T based on genome size\
 --> Input: \
     This code requires genome length that can be entered in one of three ways:\
     1) a single genome length\
     2) a fasta file containing up to 5000 items\
     3) a csv file containing at least two columns: "Virus_ID" and "genome_length"\ 
---> Output:\
+--> Output: \
     Single genome option results will display on screen.\ 
     All others will be provided in the file G2TResults.csv
 
