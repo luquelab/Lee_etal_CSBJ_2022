@@ -21,12 +21,12 @@
     Single genome option results will display on screen.\ 
     All others will be provided in the file G2TResults.csv
 
-**FILE:** MCP2TRF.py\
---> Base random forest model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the MCP sequence\
---> Requires:\ 
+**FILE:** MCP2TRF.py\ 
+--> Base random forest model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the MCP sequence \
+--> Requires: \ 
     phageFunctions.py  :  Functions for calculating T based on genome size\
     MCP2T_RF_state.db  :  Trained random forest model database\
---> Input:\ 
+--> Input: \ 
     Two options: \ 
       1) a fasta format file for up to 2000 MCPs (protein format) \
       2) an MCP phage data .csv to analyze. Must include the following columns:\
@@ -34,12 +34,12 @@
         'MCP_Sequence'\
         'MCP_len'\
         'IPC'\
---> Output:\
+--> Output: \
     MCP2TResults.csv  :  results of the random forest prediction
 
 
-**FILE:** MCP2TRF_state.db\
+**FILE:** MCP2TRF_state.db \
 --> Trained random forest model database
 
-**FILE:** phageFunctions.py\
+**FILE:** phageFunctions.py \
 --> Contains the basic functions that are reused across all jupyter notebooks associated with the G2T/MCP2T project
