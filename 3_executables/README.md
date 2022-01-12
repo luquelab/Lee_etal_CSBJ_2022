@@ -24,7 +24,7 @@
 **FILE:** MCP2TRF.py\ 
 --> Base random forest model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the MCP sequence \
 --> Requires: \ 
-    phageFunctions.py  :  Functions for calculating T based on genome size\
+    phageFunctions .py  :  Functions for calculating T based on genome size\
     MCP2T_RF_state.db  :  Trained random forest model database\
 --> Input: \ 
     Two options: \ 
