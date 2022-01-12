@@ -1,16 +1,18 @@
+
 # WHAT, WHO, WHEN
 
-- Folder containing the Jupyter notebook files associated with Lee et al. Predicting the capsid architecture of phages from metagenomic data
+- Folder containing the executable files for T-number prediction based on Lee et al. Predicting the capsid architecture of tailed phages from metagenomic data https://doi.org/10.1016/j.csbj.2021.12.032
 
 - Diana Y. Lee, Luque Lab, SDSU / dlee@sdsu.edu
-- 2021-09-24, revised 2021-11-12
+- 2021-09-24, revised 2022-05-01
+
 
 
 # FOLDERS & FILES
 
-**FILE:** phage_functions.ipynb\
---> Jupyter notebook for Python 3.0\ 
-Creates the basic functions that are reused across all jupyter notebooks associated with the G2T/MCP2T project
+**FILE:** G2T.py\
+--> Python 3.0 executable\ 
+This the current (as of 2021-11-10) G2T model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the genome
 
 **FILE:** Figure_3_Statistical_Model_Updated.ipynb\
 --> Jupyter notebook for Python 3.0 \
