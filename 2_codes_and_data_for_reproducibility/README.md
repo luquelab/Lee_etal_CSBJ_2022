@@ -8,6 +8,15 @@
 
 # FOLDERS & FILES
 
+**FOLDER:** data
+--> Contains the raw data accessed by the jupyter notebooks
+
+**FOLDER:** figure_files
+--> Contains the Adobe Illustrator files for the final figures
+
+**FOLDER:** results
+--> Contains all output from the jupyter notebooks, including .svgs used for the figures and .csv text verification files 
+
 **FILE:** phage_functions.ipynb\
 --> Jupyter notebook for Python 3.0\ 
 Creates the basic functions that are reused across all jupyter notebooks associated with the G2T/MCP2T project
