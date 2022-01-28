@@ -9,10 +9,14 @@
 # FOLDERS & FILES
 
 **FOLDER:** 1_last_submitted_manuscript
---> includes materials from the last submitted manuscript (including figure files)
+--> includes materials from the last submitted manuscript
 
 **FOLDER:** 2_codes_and_data_for_reproducibility
+<<<<<<< HEAD
+--> includes all jupyter notebooks, required data, and resulting files that were used to generate the data and analyses for the paper. Final Adobe Illustrator files for each figure are located in this folder as well.
+=======
 --> includes all jupyter notebooks, required data, and resulting files that were used to generate the data and analyses for the paper. Results folders include raw svg files used in creation of the figures.
+>>>>>>> 4e96e44883168f238942aea08ac7c306e83294d6
 
 **FOLDER:** 3_executables
 --> includes both G2T and MCP2T python executable files to run the tools on your data
