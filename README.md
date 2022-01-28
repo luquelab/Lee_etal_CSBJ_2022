@@ -12,7 +12,7 @@
 --> includes materials from the last submitted manuscript (including figure files)
 
 **FOLDER:** 2_codes_and_data_for_reproducibility
---> includes all jupyter notebooks, required data, and resulting files that were used to generate the data and analyses for the paper 
+--> includes all jupyter notebooks, required data, and resulting files that were used to generate the data and analyses for the paper. Results folders include raw svg files used in creation of the figures.
 
 **FOLDER:** 3_executables
 --> includes both G2T and MCP2T python executable files to run the tools on your data
