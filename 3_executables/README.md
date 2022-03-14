@@ -25,10 +25,10 @@
 --> save both the G2T.py and phageFunctions.py files locally.
 
 ## TO USE:
---> Run G2T.py via command line and follow the prompts. G2T.py requires input data in the form of:
-    1) a single, integer genome length value in basepairs (bp)
-    2) a fasta file with up to 1000 records
-    3) a csv file that includes the columns "Virus_ID" and "genome_length". Any additional columns are left in place in the final result, but are not used.
+--> Run G2T.py via command line and follow the prompts. G2T.py requires input data in the form of:\
+    1) a single, integer genome length value in basepairs (bp)\
+    2) a fasta file with up to 1000 records\
+    3) a csv file that includes the columns "Virus_ID" and "genome_length". Any additional columns are left in place in the final result, but are not used.\
     NOTE: We advise you to add a leading column before the data, ie: do not make "Virus_ID" or "genome_length" the first column. 
     We've encountered issues with text parsing in the first column header, and that bug is currently under investigation.
 
@@ -54,9 +54,9 @@
 --> save the MCP2TRF.py, phageFunctions.py, MCP2T_RF_state.db files locally.
 
 ## TO USE:
---> Run MCP2TRF.py via command line and follow the prompts. MCP2TRF.py requires input data in the form of:
-    1) a fasta file with up to 1000 MCP sequences
-    3) a csv file that includes the columns "Virus_ID" and "MCP_Sequence". Any additional columns are left in place in the final result, but are not used.
+--> Run MCP2TRF.py via command line and follow the prompts. MCP2TRF.py requires input data in the form of:\
+    1) a fasta file with up to 1000 MCP sequences\
+    3) a csv file that includes the columns "Virus_ID" and "MCP_Sequence". Any additional columns are left in place in the final result, but are not used.\
     NOTE: We advise you to add a leading column before the data, ie: do not make "Virus_ID" or "MCP_Sequence" the first column. 
     We've encountered issues with text parsing in the first column header, and that bug is currently under investigation.
 
