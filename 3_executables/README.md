@@ -8,7 +8,7 @@
 
 
 
-# G2T.py\
+# G2T.py
 --> This the current (as of 2021-11-10) G2T model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the genome\
 --> Requires: \ 
     phageFunctions.py  :  Functions for calculating T based on genome size\
@@ -34,7 +34,7 @@
 
 
 
-# MCP2TRF.py\ 
+# MCP2TRF.py
 --> Base random forest model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the MCP sequence \
 --> Requires: \ 
     phageFunctions.py  :  Functions for calculating T based on genome size\
