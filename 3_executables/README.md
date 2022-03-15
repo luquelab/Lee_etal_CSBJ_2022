@@ -32,7 +32,11 @@
     NOTE: We advise you to add a leading column before the data, ie: do not make "Virus_ID" or "genome_length" the first column. 
     We've encountered issues with text parsing in the first column header, and that bug is currently under investigation.
 
-
+## Interpreting results:
+--> G2T gives three numbers:\
+1) T_raw: The T-number as calculated by the formula (see manuscript, figure 2)\
+2) T_nearest: The nearest extant hexagonal or tri-hexagonal T-number\
+3) T_nearest_err_Mar: The nearest extant hexagonal or tri-hexagonal T-number <ins>if T raw is within the current error margin of 9%.</ins> If it is not, the result will read as '0' indicating a prediction of an elongated structure. \
 
 # MCP2TRF.py
 --> Base random forest model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the MCP sequence \
@@ -58,7 +62,8 @@
     NOTE: We advise you to add a leading column before the data, ie: do not make "Virus_ID" or "MCP_Sequence" the first column. 
     We've encountered issues with text parsing in the first column header, and that bug is currently under investigation.
 
-
+## Interpreting results:
+--> MCP2T yields a single prediction, T_pred, that indicates the possible extant hexagonal or tri-hexagonal T-numbers predicted by the random forest.\ 
 
 
 
