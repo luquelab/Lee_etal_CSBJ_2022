@@ -16,6 +16,7 @@
 
 **FOLDER:** 3_executables
 --> includes both G2T and MCP2T python executable files to run the tools on your data
+**--> If you're interested in trying out our code on your data, this is the folder you're looking for!**
 
 **FOLDER:** 4_github_docs
 --> (in progress)files for github pages
