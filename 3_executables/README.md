@@ -32,14 +32,14 @@ Requires: phageFunctions.py
 
 # MCP2TRF.py
 --> Base random forest model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the MCP sequence \
-Requires: phageFunctions.py & MCP2T_RF_state.db
+Requires: phageFunctions.py & MCP2Trandom_forest.joblib
 
 ## TO INSTALL:
---> save the MCP2TRF.py, phageFunctions.py, MCP2T_RF_state(new).db files locally.
+--> save the MCP2TRF.py, phageFunctions.py, MCP2Trandom_forest.joblib files locally.
 
 ## TO USE:
 --> Run MCP2TRF.py via command line and follow the prompts. MCP2TRF.py requires input data in the form of:
-1. a fasta file with up to 1000 MCP sequences
+1. a fasta file with up to 2000 MCP sequences
 2. a csv file that includes the columns "Virus_ID" and "MCP_Sequence". Any additional columns are left in place in the final result, but are not used.\
     OUTPUT: Results are provided in the file MCP2TResults.csv. \
     **NOTE:** We advise you to add a leading column before the data, ie: do not make "Virus_ID" or "MCP_Sequence" the first column. 
