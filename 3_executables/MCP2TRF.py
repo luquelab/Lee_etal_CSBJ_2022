@@ -64,8 +64,9 @@ def createFreq(acidSeq, normF=None):
 
 ## load kernel state
 ## rerun imports cell as well
-import dill
-dill.load_session('MCP2T_RF_state(new).db')
+import joblib
+rfBest_clf = joblib.load("./MCP2Trandom_forest.joblib")
+
 
 from phageFunctions import tDictAll
 tdict2,tdict2rev = tDictAll(7,1)
