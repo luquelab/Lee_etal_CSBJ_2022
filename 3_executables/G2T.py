@@ -79,8 +79,7 @@ elif genome_Type=="2":
         Y_T.append(tNum(genome_fasta_data.iloc[i]["genome_length"]/1000,2,errMar))
         
     Y = np.asarray(Y_T)
-    Y = np.reshape(np.ravel(Y), (ny, 4));
-    Y = np.asarray(Y)
+    Y = np.asarray(np.reshape(np.ravel(Y), (ny, 4)))
     
     df_T = pd.DataFrame(Y)
     df_T = df_T.rename(columns={0: 'Virus_ID', 1: 'T_raw', 2: 'T_nearest', 3: 'T_nearest_errMar'})
@@ -98,7 +97,7 @@ elif genome_Type=="3":
     print("I can do that. Your .csv file will require two columns: Virus_ID and genome_length")
     genome_data_Loc = input("Enter file location: ")
     
-    assert os.path.exists(genome_data_Loc), "Error: file does not exist at "+str(genome_Fasta_Loc)
+    assert os.path.exists(genome_data_Loc), "Error: file does not exist at "+str(genome_data_Loc)
     genome_data_file = open(genome_data_Loc,'r+')
     print("File found. Processing.")
     phageData = pd.read_csv(genome_data_file)
