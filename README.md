@@ -15,7 +15,7 @@
 --> includes all jupyter notebooks, required data, and resulting files that were used to generate the data and analyses for the paper. Final Adobe Illustrator files for each figure are located in this folder as well.
 
 **FOLDER:** 3_executables
---> includes both G2T and MCP2T python executable files to run the tools on your data
+--> includes both G2T and MCP2T python executable files to run the tools on your data\
 **--> If you're interested in trying out our code on your data, this is the folder you're looking for!**
 
 **FOLDER:** 4_github_docs
