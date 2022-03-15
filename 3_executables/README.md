@@ -1,5 +1,5 @@
 
-# WHAT, WHO, WHEN
+# G2T and MCP2T code: BETA version
 
 - Folder containing the executable files for T-number prediction based on Lee et al. Predicting the capsid architecture of tailed phages from metagenomic data https://doi.org/10.1016/j.csbj.2021.12.032
 
