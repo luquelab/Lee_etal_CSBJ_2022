@@ -74,7 +74,7 @@ tdict2,tdict2rev = tDictAll(7,1)
 errMar = 0.09
 
 # turn off the deprecation warning for ragged arrays (for T-numbers with multiple values)
-np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
+np.warnings.filterwarnings('ignore')
 
 MCP_Type = input("Get in the VAN! Enter MCP input type (1: fasta file, 2: csv file): ")
 if MCP_Type=="1":
