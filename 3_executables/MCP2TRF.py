@@ -8,11 +8,11 @@
     T-number) of a tailed phage from the MCP sequence
  Requires: 
     phageFunctions.py  :  Functions for calculating T based on genome size
-    MCP2T_RF_state.db  :  Trained random forest model database
+    MCP2Trandom_forest.joblib  :  Trained random forest model database
 Input: 
     
     Two options: 
-      1) a fasta format file for up to 2000 MCPs (protein format)
+      1) a fasta format file for up to 5000 MCPs (protein format)
       2) an MCP phage data to analyze. Must include the following columns:
         'Virus_ID'
         'MCP_Sequence'
@@ -62,8 +62,7 @@ def createFreq(acidSeq, normF=None):
 #        print("Columns are frequency percentages for each amino acid:",aaList)
         return nFreq
 
-## load kernel state
-## rerun imports cell as well
+## load RF model
 import joblib
 rfBest_clf = joblib.load("./MCP2Trandom_forest.joblib")
 
