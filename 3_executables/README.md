@@ -51,7 +51,7 @@
     MCP2TResults.csv  :  results of the random forest prediction
 
 ## TO INSTALL:
---> save the MCP2TRF.py, phageFunctions.py, MCP2T_RF_state.db files locally.
+--> save the MCP2TRF.py, phageFunctions.py, MCP2T_RF_state(new).db files locally.
 
 ## TO USE:
 --> Run MCP2TRF.py via command line and follow the prompts. MCP2TRF.py requires input data in the form of:\
@@ -66,7 +66,7 @@
 
 
 ## Other files in the directory:
-**FILE:** MCP2TRF_state.db \
+**FILE:** MCP2TRF_state(new).db \
 --> Trained random forest model database
 
 **FILE:** phageFunctions.py \
