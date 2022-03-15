@@ -73,6 +73,9 @@ tdict2,tdict2rev = tDictAll(7,1)
 # set the error margin
 errMar = 0.09
 
+# turn off the deprecation warning for ragged arrays (for T-numbers with multiple values)
+np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
+
 MCP_Type = input("Get in the VAN! Enter MCP input type (1: fasta file, 2: csv file): ")
 if MCP_Type=="1":
     print("Vroom! Let's go!")
@@ -161,7 +164,6 @@ elif MCP_Type=="2":
     y_Pred = rfBest_clf.predict(x_actual)  
 
     # create an output file
-    np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
     y_PredTemp = []
     for i in range(n):
         y_PredTemp.append(x_Phage[i,0])
