@@ -10,8 +10,8 @@
 
 # G2T.py
 --> This the current (as of 2021-11-10) G2T model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the genome\
---> Requires: \ 
-    phageFunctions.py  :  Functions for calculating T based on genome size\
+--> Requires:\ 
+    phageFunctions.py  :  Functions for calculating T based on genome size
 
 ## TO INSTALL:
 --> save both the G2T.py and phageFunctions.py files locally.
