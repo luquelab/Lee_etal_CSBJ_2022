@@ -64,6 +64,9 @@ def createFreq(acidSeq, normF=None):
 
 ## load RF model
 import joblib
+# turn off the user warning for unpickling across versions
+# this is not the best way to handle this issue; it needs to be solved via environment requirements
+np.warnings.filterwarnings('ignore', category=np.UserWarning)
 rfBest_clf = joblib.load("./MCP2Trandom_forest.joblib")
 
 
