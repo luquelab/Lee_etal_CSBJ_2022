@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """ Author:
    Diana Y. Lee, Luque Lab, SDSU
    dlee@sdsu.edu

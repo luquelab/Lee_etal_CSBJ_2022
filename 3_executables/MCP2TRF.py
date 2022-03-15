@@ -16,8 +16,6 @@ Input:
       2) an MCP phage data to analyze. Must include the following columns:
         'Virus_ID'
         'MCP_Sequence'
-        'MCP_len'
-        'IPC'
 Output:
     MCP2TResults.csv  :  results of the random forest prediction
 """
@@ -67,7 +65,10 @@ def createFreq(acidSeq, normF=None):
 ## load kernel state
 ## rerun imports cell as well
 import dill
-dill.load_session('MCP2T_RF_state.db')
+dill.load_session('MCP2T_RF_state(new).db')
+
+from phageFunctions import tDictAll
+tdict2,tdict2rev = tDictAll(7,1)
 
 # set the error margin
 errMar = 0.09
@@ -131,7 +132,7 @@ if MCP_Type=="1":
     
 elif MCP_Type=="2":
     print("Vroom! Let's go!")
-    print("Your .csv file will require four columns: Virus ID, MCP_Sequence, MCP_len, and IPC")
+    print("Your .csv file will require four columns: Virus ID, MCP_Sequence")
     MCP_File_Loc = input("Enter file location: ")
     
     assert os.path.exists(MCP_File_Loc), "Error: file does not exist at "+str(MCP_File_Loc)
@@ -147,8 +148,8 @@ elif MCP_Type=="2":
     AAT = []
     for i in range(n):
         AAT.append(MCPData.iloc[i]["Virus_ID"])
-        AAT.append(MCPData.iloc[i]["IPC"])
-        AAT.append(MCPData.iloc[i]["MCP_len"])
+        AAT.append(IP(str(MCPData.iloc[i]["MCP_Sequence"])).pi())
+        AAT.append(len(str(MCPData.iloc[i]["MCP_Sequence"])))
         for j in range(20):
             AAT.append(freq[i][j])
     AAT = np.reshape(np.ravel(AAT), (n, 23))
@@ -160,6 +161,7 @@ elif MCP_Type=="2":
     y_Pred = rfBest_clf.predict(x_actual)  
 
     # create an output file
+    np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
     y_PredTemp = []
     for i in range(n):
         y_PredTemp.append(x_Phage[i,0])
@@ -172,3 +174,4 @@ elif MCP_Type=="2":
     
 else:
     print("Sad honk. Invalid input.")
+    

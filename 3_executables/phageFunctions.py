@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Author:
     Diana Y. Lee, Luque Lab, SDSU
@@ -9,6 +8,7 @@ Purpose:
 
 # basic imports
 import numpy as np
+import copy
 
 def T_power(x,y):
     """
@@ -169,7 +169,65 @@ def tList(hkLim1):
     
     return [t1, t2, tt, th]
 
-def tDictAll(hkLim2):
+def tDictAll(hkLim2, label_tag=0, errMar=.09):
+    """
+    This function creates dictionaries for possible T-number lists with integer values
+
+    input: hkLim2 - integer limit of h and k
+           label_tag - integer that determines how label tags are assigned:
+                       0 (each T), or 1 (Ts within a 9% error margin combined). Defaults to 0.
+   
+    output: tdictionary - dictionary that yields integer indices for each possible T-number 
+            tdictrev - dictionary that yields the T-number associated with integer index
+    
+    """ 
+    
+    label_tag = label_tag or 0
+    if (label_tag <0) or (label_tag >1):
+        print("Valid label types are 0 (each T), or 1 (Ts within a 9% error margin combined). Defaults to 0.")
+        return
+    
+    #create a list of possible, valid T-numbers, as well as separate t-number lists for T_h and T_t through h/k = hkLim2 
+    tps2, tps, tps_t, tps_h = tList(hkLim2)
+
+    # create a numbered list of the posible T-numbers
+    tIndex = np.arange(len(tps))
+    tIndex
+    
+    # combine the 
+    
+    if (label_tag==1):
+        errMar = errMar or .09
+        for i in range(len(tps)-1):
+            if tps[i] < 25:
+                if (tps[i]+tps[i]*errMar>tps[i+1]):
+                    tIndex[i+1]=tIndex[i]
+            else:
+                tIndex[i]=15
+        tdictrev = {15: ['>25']}
+        for i in range(1,len(tps)):
+            if (tIndex[i]<15):
+                if tIndex[i] not in tdictrev:
+                    tdictrev[tIndex[i]] = list()
+                if [tps[i]] not in tdictrev[tIndex[i]]:
+                    tdictrev[tIndex[i]].extend([tps[i]])
+
+    # create a zip object from the two lists above
+    zipbObj = zip(tps, tIndex)
+
+    # create a dictionary from zip object
+    tdictionary = dict(zipbObj)
+    tdictionary.update( {0:len(tps)} )
+
+    # and reverse it (note that if the consolidation option is selected, tdictrev will have been made above)
+    if (label_tag==0):
+        zipbObj = zip(tIndex, tps)
+        tdictrev = dict(zipbObj)
+        tdictrev.update( {len(tps):0} )
+    
+    return [tdictionary,tdictrev]
+
+def tDictAll_old(hkLim2):
     """
     This function creates dictionaries for possible T-number lists with integer values
     input: hkLim2 - integer limit of h and k
