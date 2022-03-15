@@ -45,8 +45,6 @@
       2) an MCP phage data .csv to analyze. Must include the following columns:\
         'Virus_ID'\
         'MCP_Sequence'\
-        'MCP_len'\
-        'IPC'\
 --> Output: \
     MCP2TResults.csv  :  results of the random forest prediction
 
