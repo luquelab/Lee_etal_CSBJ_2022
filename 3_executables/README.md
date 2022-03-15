@@ -12,14 +12,6 @@
 --> This the current (as of 2021-11-10) G2T model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the genome\
 --> Requires: \ 
     phageFunctions.py  :  Functions for calculating T based on genome size\
---> Input: \
-This code requires genome length that can be entered in one of three ways:
-1. a single genome length
-2. a fasta file containing up to 5000 items
-3. a csv file containing at least two columns: "Virus_ID" and "genome_length"\ 
---> Output: \
-    Single genome option results will display on screen.\ 
-    All others will be provided in the file G2TResults.csv
 
 ## TO INSTALL:
 --> save both the G2T.py and phageFunctions.py files locally.
@@ -29,6 +21,7 @@ This code requires genome length that can be entered in one of three ways:
 1. a single, integer genome length value in basepairs (bp)
 2. a fasta file with up to 1000 records
 3. a csv file that includes the columns "Virus_ID" and "genome_length". Any additional columns are left in place in the final result, but are not used.
+    OUTPUT: Single genome option results will display on screen. All others will be provided in the file G2TResults.csv. 
     NOTE: We advise you to add a leading column before the data, ie: do not make "Virus_ID" or "genome_length" the first column. 
     We've encountered issues with text parsing in the first column header, and that bug is currently under investigation.
 
@@ -43,14 +36,6 @@ This code requires genome length that can be entered in one of three ways:
 --> Requires: \ 
     phageFunctions.py  :  Functions for calculating T based on genome size\
     MCP2T_RF_state.db  :  Trained random forest model database\
---> Input: \ 
-    Two options:\
-1. a fasta format file for up to 2000 MCPs (protein format)
-2. an MCP phage data .csv to analyze. Must include the following columns:\
-        'Virus_ID'\
-        'MCP_Sequence'\
---> Output: \
-    MCP2TResults.csv  :  results of the random forest prediction
 
 ## TO INSTALL:
 --> save the MCP2TRF.py, phageFunctions.py, MCP2T_RF_state(new).db files locally.
@@ -59,6 +44,7 @@ This code requires genome length that can be entered in one of three ways:
 --> Run MCP2TRF.py via command line and follow the prompts. MCP2TRF.py requires input data in the form of:
 1. a fasta file with up to 1000 MCP sequences
 2. a csv file that includes the columns "Virus_ID" and "MCP_Sequence". Any additional columns are left in place in the final result, but are not used.\
+    OUTPUT: Results are provided in the file MCP2TResults.csv. 
     NOTE: We advise you to add a leading column before the data, ie: do not make "Virus_ID" or "MCP_Sequence" the first column. 
     We've encountered issues with text parsing in the first column header, and that bug is currently under investigation.
 
