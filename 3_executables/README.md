@@ -52,7 +52,7 @@ Requires: phageFunctions.py & MCP2Trandom_forest.joblib
 
 
 ## Other files in the directory:
-**FILE:** MCP2TRF_state(new).db \
+**FILE:** MCP2Trandom_forest.joblib \
 --> Trained random forest model database
 
 **FILE:** phageFunctions.py \
@@ -63,3 +63,9 @@ Requires: phageFunctions.py & MCP2Trandom_forest.joblib
 
 **FILE:** MCP2TRF_test_data.csv \
 --> Contains MCP sequence data for three phages that can be used as a template or to test installation for MCP2TRF.py
+
+**FILE:** G2T_fasta_test.faa \
+--> Contains genome data in fasta format for three phages that can be used to test installation for G2T.py
+
+**FILE:** MCP2TRF_fasta_test.faa \
+--> Contains MCP Sequence data in fasta format for three phages that can be used to test installation for MCP2TRF.py
