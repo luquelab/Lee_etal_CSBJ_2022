@@ -56,7 +56,7 @@ Requires: phageFunctions.py & MCP2Trandom_forest.joblib
 --> Trained random forest model database
 
 **FILE:** phageFunctions.py \
---> Contains the basic functions that are reused across all jupyter notebooks associated with the G2T/MCP2T project
+--> Contains the basic functions that are reused across the G2T/MCP2T project
 
 **FILE:** G2T_test_data.csv \
 --> Contains genome length data for three phages that can be used as a template or to test installation for G2T.py
