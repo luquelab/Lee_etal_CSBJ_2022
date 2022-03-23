@@ -10,7 +10,9 @@
 
 # G2T.py
 --> This the current (as of 2021-11-10) G2T model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the genome\
-Requires: phageFunctions.py
+Requires: phageFunctions.py\
+Tested on: Python 3\
+Packages Required: biopython v. 1.79
 
 ## TO INSTALL:
 --> save both the G2T.py and phageFunctions.py files locally.
@@ -32,7 +34,9 @@ Requires: phageFunctions.py
 
 # MCP2TRF.py
 --> Base random forest model for predicting the capsid architecture (as measured by the T-number) of a tailed phage from the MCP sequence \
-Requires: phageFunctions.py & MCP2Trandom_forest.joblib
+Requires: phageFunctions.py & MCP2Trandom_forest.joblib\
+Tested on: Python 3\
+Packages Required: biopython v. 1.79
 
 ## TO INSTALL:
 --> save the MCP2TRF.py, phageFunctions.py, MCP2Trandom_forest.joblib files locally.
