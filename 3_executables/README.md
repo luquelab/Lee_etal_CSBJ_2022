@@ -62,6 +62,10 @@ Packages Required: biopython v. 1.79
 **FILE:** phageFunctions.py \
 --> Contains the basic functions that are reused across the G2T/MCP2T project
 
+## Other folders in the directory:
+
+The **sample_data** folder includes data and expected results:\
+
 **FILE:** G2T_test_data.csv \
 --> Contains genome length data for three phages that can be used as a template or to test installation for G2T.py
 
