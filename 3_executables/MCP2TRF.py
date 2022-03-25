@@ -66,7 +66,7 @@ def createFreq(acidSeq, normF=None):
 import joblib
 # turn off the user warning for unpickling across versions
 # this is not the best way to handle this issue; it needs to be solved via environment requirements
-np.warnings.filterwarnings('ignore', category=np.UserWarning)
+#np.warnings.filterwarnings('ignore', category=np.UserWarning)
 rfBest_clf = joblib.load("./MCP2Trandom_forest.joblib")
 
 
@@ -138,7 +138,7 @@ if MCP_Type=="1":
     
 elif MCP_Type=="2":
     print("Vroom! Let's go!")
-    print("Your .csv file will require four columns: Virus ID, MCP_Sequence")
+    print("Your .csv file will require two columns: Virus ID, MCP_Sequence")
     MCP_File_Loc = input("Enter file location: ")
     
     assert os.path.exists(MCP_File_Loc), "Error: file does not exist at "+str(MCP_File_Loc)
